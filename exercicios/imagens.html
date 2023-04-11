@@ -1,0 +1,79 @@
+<div wm-slider>
+
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro da Cidade" width="513" height="342" title="Muro da Cidade por Tarso Bessa">
+    </p>
+    
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="" width="513" height="342">
+    </p>
+    <p>
+        <img src="https://www.kotas.com.br/blog/wp-content/uploads/2021/12/Devmedia.jpg" alt="DevMedia" width="513" height="342">
+    </p>
+    
+    <p class="circular">
+    <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="Rio de Janeiro" height="342">
+</p> 
+
+<p class="texto">
+    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="Avatar" height="50" align="left">
+    skdaskdaksdmka kasdmaskdkas a kdadamdaskd ad skaaaaaaaaaaaaaaa sadkadakak askdsdksdkadksad  askds k dak k kadkamdksdmsadma mk da dmksmd s kdsakds mk kaksdkasdka  a dskkmkasdk k sm
+</p>
+<p class="cidade"></p>
+
+<p>
+    <picture>
+        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+        media="(min-width:600px)">
+        <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="Logo" align="right">
+        
+    </picture>
+</p>
+</div>
+<style>
+    p{
+        position: absolute;
+        display: none;
+    }
+    .circular{
+        width: 513px;
+        background-color: #fff;
+    }
+    .texto{
+        width: 400px;
+    }
+    .texto img{
+        margin-right: 10px;
+    }
+
+    .cidade{
+        width: 513px;
+        height: 342px;
+        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+</style>
+
+<script>
+    function mover(elem, inicio, fim, passo, callback) {
+        const noveInicio = inicio - passo
+        if (noveInicio >= fim) {
+            elem.style.left = noveInicio + 'px'
+            setTimeout(()=>mover(elem,noveInicio,fim,passo,callback),7)
+        }else{ 
+            callback()
+        }
+}
+        // const p = document.querySelector('[wm-slider] > p')
+        // p.style.display = 'block'
+        // mover(p,1500, -513,5,()=>{
+        //     console.log('terminou!!')
+        // })
+    
+    function slider(){
+        const elementos = document.querySelectorAll('[wm-slider]>p')
+    }
+</script> 
+<!-- imcompleto -->
